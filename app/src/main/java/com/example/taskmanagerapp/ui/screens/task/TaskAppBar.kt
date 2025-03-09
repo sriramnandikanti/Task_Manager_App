@@ -209,7 +209,7 @@ fun PreviewNewTaskAppBar() {
 fun PreviewExistingTaskAppBar() {
     ExistingTaskAppBar(
         navigateToListScreen = {},
-        selectedTask = TaskEntity(0, "something", "nothing", Priority.HIGH)
+        selectedTask = TaskEntity(0, "something", "nothing", Priority.HIGH, "due date")
     )
 }
 

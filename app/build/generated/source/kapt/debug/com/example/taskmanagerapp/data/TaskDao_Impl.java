@@ -44,7 +44,7 @@ public final class TaskDao_Impl implements TaskDao {
     this.__insertionAdapterOfTaskEntity = new EntityInsertionAdapter<TaskEntity>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR IGNORE INTO `task_table` (`id`,`title`,`description`,`priority`) VALUES (nullif(?, 0),?,?,?)";
+        return "INSERT OR IGNORE INTO `task_table` (`id`,`title`,`description`,`priority`,`date`) VALUES (nullif(?, 0),?,?,?,?)";
       }
 
       @Override
@@ -64,6 +64,11 @@ public final class TaskDao_Impl implements TaskDao {
           stmt.bindNull(4);
         } else {
           stmt.bindString(4, __Priority_enumToString(value.getPriority()));
+        }
+        if (value.getDate() == null) {
+          stmt.bindNull(5);
+        } else {
+          stmt.bindString(5, value.getDate());
         }
       }
     };
@@ -81,7 +86,7 @@ public final class TaskDao_Impl implements TaskDao {
     this.__updateAdapterOfTaskEntity = new EntityDeletionOrUpdateAdapter<TaskEntity>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `task_table` SET `id` = ?,`title` = ?,`description` = ?,`priority` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `task_table` SET `id` = ?,`title` = ?,`description` = ?,`priority` = ?,`date` = ? WHERE `id` = ?";
       }
 
       @Override
@@ -102,7 +107,12 @@ public final class TaskDao_Impl implements TaskDao {
         } else {
           stmt.bindString(4, __Priority_enumToString(value.getPriority()));
         }
-        stmt.bindLong(5, value.getId());
+        if (value.getDate() == null) {
+          stmt.bindNull(5);
+        } else {
+          stmt.bindString(5, value.getDate());
+        }
+        stmt.bindLong(6, value.getId());
       }
     };
     this.__preparedStmtOfDeleteAllTasks = new SharedSQLiteStatement(__db) {
@@ -200,6 +210,7 @@ public final class TaskDao_Impl implements TaskDao {
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
           final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
           final int _cursorIndexOfPriority = CursorUtil.getColumnIndexOrThrow(_cursor, "priority");
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
           final List<TaskEntity> _result = new ArrayList<TaskEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final TaskEntity _item;
@@ -219,7 +230,13 @@ public final class TaskDao_Impl implements TaskDao {
             }
             final Priority _tmpPriority;
             _tmpPriority = __Priority_stringToEnum(_cursor.getString(_cursorIndexOfPriority));
-            _item = new TaskEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpPriority);
+            final String _tmpDate;
+            if (_cursor.isNull(_cursorIndexOfDate)) {
+              _tmpDate = null;
+            } else {
+              _tmpDate = _cursor.getString(_cursorIndexOfDate);
+            }
+            _item = new TaskEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpPriority,_tmpDate);
             _result.add(_item);
           }
           return _result;
@@ -250,6 +267,7 @@ public final class TaskDao_Impl implements TaskDao {
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
           final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
           final int _cursorIndexOfPriority = CursorUtil.getColumnIndexOrThrow(_cursor, "priority");
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
           final TaskEntity _result;
           if(_cursor.moveToFirst()) {
             final int _tmpId;
@@ -268,7 +286,13 @@ public final class TaskDao_Impl implements TaskDao {
             }
             final Priority _tmpPriority;
             _tmpPriority = __Priority_stringToEnum(_cursor.getString(_cursorIndexOfPriority));
-            _result = new TaskEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpPriority);
+            final String _tmpDate;
+            if (_cursor.isNull(_cursorIndexOfDate)) {
+              _tmpDate = null;
+            } else {
+              _tmpDate = _cursor.getString(_cursorIndexOfDate);
+            }
+            _result = new TaskEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpPriority,_tmpDate);
           } else {
             _result = null;
           }
@@ -312,6 +336,7 @@ public final class TaskDao_Impl implements TaskDao {
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
           final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
           final int _cursorIndexOfPriority = CursorUtil.getColumnIndexOrThrow(_cursor, "priority");
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
           final List<TaskEntity> _result = new ArrayList<TaskEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final TaskEntity _item;
@@ -331,7 +356,13 @@ public final class TaskDao_Impl implements TaskDao {
             }
             final Priority _tmpPriority;
             _tmpPriority = __Priority_stringToEnum(_cursor.getString(_cursorIndexOfPriority));
-            _item = new TaskEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpPriority);
+            final String _tmpDate;
+            if (_cursor.isNull(_cursorIndexOfDate)) {
+              _tmpDate = null;
+            } else {
+              _tmpDate = _cursor.getString(_cursorIndexOfDate);
+            }
+            _item = new TaskEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpPriority,_tmpDate);
             _result.add(_item);
           }
           return _result;
@@ -364,6 +395,7 @@ public final class TaskDao_Impl implements TaskDao {
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
           final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
           final int _cursorIndexOfPriority = CursorUtil.getColumnIndexOrThrow(_cursor, "priority");
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
           final List<TaskEntity> _result = new ArrayList<TaskEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final TaskEntity _item;
@@ -383,7 +415,13 @@ public final class TaskDao_Impl implements TaskDao {
             }
             final Priority _tmpPriority;
             _tmpPriority = __Priority_stringToEnum(_cursor.getString(_cursorIndexOfPriority));
-            _item = new TaskEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpPriority);
+            final String _tmpDate;
+            if (_cursor.isNull(_cursorIndexOfDate)) {
+              _tmpDate = null;
+            } else {
+              _tmpDate = _cursor.getString(_cursorIndexOfDate);
+            }
+            _item = new TaskEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpPriority,_tmpDate);
             _result.add(_item);
           }
           return _result;
@@ -416,6 +454,7 @@ public final class TaskDao_Impl implements TaskDao {
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
           final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
           final int _cursorIndexOfPriority = CursorUtil.getColumnIndexOrThrow(_cursor, "priority");
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
           final List<TaskEntity> _result = new ArrayList<TaskEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final TaskEntity _item;
@@ -435,7 +474,13 @@ public final class TaskDao_Impl implements TaskDao {
             }
             final Priority _tmpPriority;
             _tmpPriority = __Priority_stringToEnum(_cursor.getString(_cursorIndexOfPriority));
-            _item = new TaskEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpPriority);
+            final String _tmpDate;
+            if (_cursor.isNull(_cursorIndexOfDate)) {
+              _tmpDate = null;
+            } else {
+              _tmpDate = _cursor.getString(_cursorIndexOfDate);
+            }
+            _item = new TaskEntity(_tmpId,_tmpTitle,_tmpDescription,_tmpPriority,_tmpDate);
             _result.add(_item);
           }
           return _result;

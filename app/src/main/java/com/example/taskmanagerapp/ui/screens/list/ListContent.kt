@@ -241,6 +241,7 @@ fun TaskItemPreview() {
         title = "task1",
         priority = Priority.NONE,
         description = "task 1 should be completed",
+        date = "due date",
         id = 1
     ), navigateToTaskScreen = {})
 }
