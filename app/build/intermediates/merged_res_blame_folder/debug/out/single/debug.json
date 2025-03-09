@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/drawable_ic_logo_dark.xml.flat",
+        "source": "com.example.taskmanagerapp-main-63:/drawable/ic_logo_dark.xml"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/drawable_ic_logo_light.xml.flat",
+        "source": "com.example.taskmanagerapp-main-63:/drawable/ic_logo_light.xml"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.taskmanagerapp-main-63:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xxxhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/drawable_ic_vertical_menu.xml.flat",
+        "source": "com.example.taskmanagerapp-main-63:/drawable/ic_vertical_menu.xml"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-hdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-hdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.taskmanagerapp-main-63:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-mdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-mdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/drawable_ic_sad_face.xml.flat",
+        "source": "com.example.taskmanagerapp-main-63:/drawable/ic_sad_face.xml"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.taskmanagerapp-main-63:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/xml_backup_rules.xml.flat",
+        "source": "com.example.taskmanagerapp-main-63:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/drawable_ic_filter_list.xml.flat",
+        "source": "com.example.taskmanagerapp-main-63:/drawable/ic_filter_list.xml"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.taskmanagerapp-merged_res-61:/mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.example.taskmanagerapp-main-63:/mipmap-xxhdpi/ic_launcher_monochrome.png"
+    }
+]

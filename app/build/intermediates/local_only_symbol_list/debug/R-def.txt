@@ -1,0 +1,31 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_filter_list
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable ic_logo_dark
+drawable ic_logo_light
+drawable ic_sad_face
+drawable ic_vertical_menu
+mipmap ic_launcher
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
+mipmap ic_launcher_monochrome
+string add_button
+string app_name
+string delete_all_tasks
+string delete_all_tasks_confirmation
+string delete_task
+string delete_task_confirmation
+string empty_content
+string sad_face_icon
+style Theme.TaskManager
+xml backup_rules
+xml data_extraction_rules
